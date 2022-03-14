@@ -1,26 +1,23 @@
 package main
 
-import (
-	"fmt"
-)
+import "fmt"
 
 func main() {
 
-	//asdafaf
-	//sdfsfsf
-	a := [5]int{1, 2, 3, 4, 5}
-	fmt.Println(a) // [1 2 3 4 5]
+	var a int
+	fmt.Scan(&a)
+	var t int
+	var x [100]int
+	var cnt int
+	cnt = 0
+	for i := 0; i < a; i++ {
+		fmt.Scan(&t)
+		x[i] = t
+		if t > 0 {
+			cnt++
 
-	for _, elem2 := range a {
-		elem2 = 100
-		fmt.Println(elem2)
-
-		// 100
-		// 100
-		// 100
-		// 100
-		// 100
+		}
 	}
-	fmt.Println(a) // [1 2 3 4 5]
+	fmt.Printf("%d", cnt)
 
 }
